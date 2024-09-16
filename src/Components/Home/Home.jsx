@@ -1,4 +1,3 @@
-import Navbar from "../Navbar/Navbar";
 import { Box, Typography } from "@mui/material";
 import banner from "../../assets/banner.png";
 import missionImg from "../../assets/misson_img.png";
@@ -10,8 +9,7 @@ import rightSideImg from "../../assets/right_side.png";
 function Home() {
   return (
     <>
-      <Box sx={{ maxWidth: "1333px", margin: "auto" }}>
-        <Navbar />
+      <Box>
         <Box sx={{ maxWidth: "1316px", maxHeight: "719px", margin: "auto" }}>
           <Box sx={{ width: "100%" }} component="img" src={banner} />
         </Box>

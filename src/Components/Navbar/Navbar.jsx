@@ -16,12 +16,13 @@ function Navbar() {
     { name: "AR", path: "" },
   ]);
   return (
-    <Container>
+   
       <Box
         sx={{
           display: "flex",
           backgroundColor: "#303030",
           alignItems: "center",
+          width:'80%',
           px: "6px",
           py: "12px",
           margin: "10px auto",
@@ -65,7 +66,7 @@ function Navbar() {
           })}
         </Box>
       </Box>
-    </Container>
+   
   );
 }
 
