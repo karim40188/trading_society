@@ -23,7 +23,6 @@ function Navbar() {
         alignItems: "center",
         px: "6px",
         py:"12px",
-        maxWidth:'1333px',
         margin:'10px auto',
         justifyContent:'space-around',
         borderRadius:'15px',
