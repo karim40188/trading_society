@@ -1,4 +1,4 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import logo from "../../assets/logo.png";
 import branding from "../../assets/branding_name.png";
 import { Link } from "react-router-dom";

@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid2, Typography } from "@mui/material";
 import banner from "../../assets/banner.png";
 import missionImg from "../../assets/misson_img.png";
 import mission from "../../assets/mission.png";
@@ -6,6 +6,12 @@ import visionImg from "../../assets/vision_img.png";
 import vision from "../../assets/Vision.png";
 import leftSideImg from "../../assets/left_side.png";
 import rightSideImg from "../../assets/right_side.png";
+import fireImg from "../../assets/fireImg.png";
+import "../../index.css";
+import mobile from "../../assets/phone.png";
+import tablet from "../../assets/tablet.png";
+import vector from "../../assets/Vector.png";
+
 function Home() {
   return (
     <>
@@ -59,111 +65,110 @@ function Home() {
       </Box>
 
       <Box sx={{ marginBlock: "200px" }}>
-        <Box
+        <Grid2
+          container
           sx={{
             display: "flex",
             position: "relative",
             justifyContent: "center",
-            gap: "40px",
+            alignItems: "center",
+            gap: "20px",
           }}
         >
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <Box sx={{ display: "flex", alignItems: "start" }}>
+          <Grid2 item xs={12} md={6} sx={{ display: "flex", gap: "30px" }}>
+            <Box
+              sx={{
+                maxWidth: "250px",
+                maxHeight: "250px",
+                backgroundImg: "cover",
+              }}
+              component="img"
+              src={missionImg}
+            />
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                mt: "100px",
+                gap: "50px",
+              }}
+            >
               <Box
                 sx={{
-                  maxWidth: "250px",
-                  maxHeight: "250px",
-                  backgroundImg: "cover",
+                  maxWidth: "264px",
+                  maxHeight: "41px",
+                  marginLeft: "-100px",
                 }}
                 component="img"
-                src={missionImg}
+                src={mission}
               />
-              <Box
+              <Typography
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  mt: "100px",
-                  gap: "10px",
+                  maxWidth: "356px",
+                  maxheight: "98px",
+                  fontFamily: "TanseekModernProArabic-Light",
+                  fontSize: "27px",
+                  color: "#FFFFFF",
+                  fontWeight: "400",
+                  lineHeight: "33.31px",
                 }}
               >
-                <Box
-                  sx={{
-                    maxWidth: "264px",
-                    maxHeight: "41px",
-                    marginLeft: "-30px",
-                  }}
-                  component="img"
-                  src={mission}
-                />
-                <Typography
-                  sx={{
-                    maxWidth: "356px",
-                    maxheight: "98px",
-                    fontFamily: "TanseekModernProArabic-Light",
-                    fontSize: "27px",
-                    color: "#FFFFFF",
-                    fontWeight: "400",
-                    lineHeight: "33.31px",
-                  }}
-                >
-                  Our mission at Trading Society is to provide high-quality,
-                  easy-to-understand Forex education that empowers traders of
-                  all levels. We aim to build a strong, collaborative community
-                  where traders can share insights, learn from each other, and
-                  grow in a supportive environment.
-                </Typography>
-              </Box>
+                Our mission at Trading Society is to provide high-quality,
+                easy-to-understand Forex education that empowers traders of all
+                levels. We aim to build a strong, collaborative community where
+                traders can share insights, learn from each other, and grow in a
+                supportive environment.
+              </Typography>
             </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-            }}
-          >
-            <Box sx={{ display: "flex", alignItems: "center"}}>
+          </Grid2>
+          <Grid2 item xs={12} md={5} sx={{ display: "flex", gap: "30px" }}>
+            <Box
+              sx={{
+                maxWidth: "346px",
+                maxHeight: "217px",
+                backgroundImg: "cover",
+              }}
+              component="img"
+              src={visionImg}
+            />
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                mt: "100px",
+                gap: "50px",
+              }}
+            >
               <Box
                 sx={{
-                  maxWidth: "346px",
-                  maxHeight: "217px",
-                  backgroundImg: "cover",
+                  maxWidth: "234px",
+                  maxHeight: "36px",
+                  marginLeft: "-100px",
                 }}
                 component="img"
-                src={visionImg}
+                src={vision}
               />
-              <Box sx={{ display: "flex", flexDirection: "column",gap:'10px',mt:'100px' }}>
-                <Box
-                  sx={{
-                    maxWidth: "234px",
-                    maxHeight: "36px",
-                    marginLeft: "-30px",
-                  }}
-                  component="img"
-                  src={vision}
-                />
-                <Typography
-                  sx={{
-                    maxWidth: "356px",
-                    maxHeight: "98px",
-                    fontFamily: "TanseekModernProArabic-Light",
-                    fontSize: "27px",
-                    color: "#FFFFFF",
-                    fontWeight: "400",
-                    lineHeight: "33.31px",
-                  }}
-                >
-                  Our vision is to create a global network of skilled traders
-                  who not only succeed individually but also contribute to the
-                  growth of a thriving, informed trading community. We envision
-                  a future where Forex trading is accessible, transparent, and
-                  rewarding for all.
-                </Typography>
-              </Box>
+              <Typography
+                sx={{
+                  maxWidth: "356px",
+                  maxheight: "98px",
+                  fontFamily: "TanseekModernProArabic-Light",
+                  fontSize: "27px",
+                  color: "#FFFFFF",
+                  fontWeight: "400",
+                  lineHeight: "33.31px",
+                }}
+              >
+                Our mission at Trading Society is to provide high-quality,
+                easy-to-understand Forex education that empowers traders of all
+                levels. We aim to build a strong, collaborative community where
+                traders can share insights, learn from each other, and grow in a
+                supportive environment.
+              </Typography>
             </Box>
-          </Box>
+          </Grid2>
+
+          {/* left side */}
           <Box
             sx={{
               maxWidth: "350px",
@@ -180,6 +185,7 @@ function Home() {
               src={leftSideImg}
             />
           </Box>
+          {/* right side */}
           <Box
             sx={{
               maxWidth: "350px",
@@ -192,10 +198,53 @@ function Home() {
           >
             <Box sx={{ width: "100%" }} component="img" src={rightSideImg} />
           </Box>
-        </Box>
+        </Grid2>
       </Box>
 
-      <Box sx={{ my: "200px" }}></Box>
+      <Box sx={{ my: "200px" }}>
+        <Box sx={{display:'flex'}}>
+          <Box sx={{width:'590px',height:'675px' , position:'relative'}}>
+            <Box component="img" src={mobile} />
+            <Box sx={{width:'250px',height:'204.65px'}}>
+
+            <Box component="img" src={tablet}  sx={{position:'absolute', top:'50%',left:'50%'}}/>
+            </Box>
+          </Box>
+          <Box>
+            <Box component="img" src={fireImg} />
+            <Typography
+              sx={{
+                fontSize: "40px",
+                fontWeight: "400",
+                fontFamily: "Bayon",
+                color: "#ECBC56",
+              }}
+            >
+              TRADE ALERT
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "25px",
+                fontWeight: "400",
+                fontFamily: "25px",
+                textTransform: "uppercase",
+                color:'#FFFFFF',
+                lineHeight:'45.17px'
+              }}
+            >
+              Stay Ahead of the Market with Daily Trade Ideas from Trading
+              Society Traders !
+            </Typography>
+            <Typography sx={{color:'gray',fontFamily:'TanseekModernProArabic-Light',fontSize:'23px',fontWeight:'400',mt:'5px'}}>
+              Unlock profitable opportunities by following our traders trade
+              alerts, delivered daily for Forex, Indices, and Commodities. Let
+              our experienced educators guide you to smarter, more informed
+              trades every day.
+            </Typography>
+          </Box>
+          <Box component="img" src={vector} />
+        </Box>
+      </Box>
     </>
   );
 }
