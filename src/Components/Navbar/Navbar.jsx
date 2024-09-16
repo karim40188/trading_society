@@ -22,12 +22,13 @@ function Navbar() {
           display: "flex",
           backgroundColor: "#303030",
           alignItems: "center",
-          width:'80%',
+      maxWidth:'1333px',
           px: "6px",
           py: "12px",
           margin: "10px auto",
           justifyContent: "space-around",
           borderRadius: "15px",
+        
        
         
         }}

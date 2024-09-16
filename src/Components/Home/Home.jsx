@@ -28,7 +28,11 @@ function Home() {
               ABOUT US – TRADING SOCIETY
             </Typography>
             <Box
-              sx={{ border: "5px solid #ECBC56", maxWidth: "251px", height: "0" }}
+              sx={{
+                border: "5px solid #ECBC56",
+                maxWidth: "251px",
+                height: "0",
+              }}
             ></Box>
           </Box>
           <Typography
@@ -55,82 +59,110 @@ function Home() {
       </Box>
 
       <Box sx={{ marginBlock: "200px" }}>
-        <Box sx={{ display: "flex", position: "relative",flexWrap:'wrap' }}>
+        <Box
+          sx={{
+            display: "flex",
+            position: "relative",
+            justifyContent: "center",
+            gap: "40px",
+          }}
+        >
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
-              alignItems:'center'
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center",flexWrap:'wrap' }}>
+            <Box sx={{ display: "flex", alignItems: "start" }}>
               <Box
-                sx={{ maxWidth: "250px", maxHeight: "250px", backgroundImg: "cover" }}
+                sx={{
+                  maxWidth: "250px",
+                  maxHeight: "250px",
+                  backgroundImg: "cover",
+                }}
                 component="img"
                 src={missionImg}
               />
               <Box
-                sx={{ maxWidth: "264px", maxHeight: "41px", marginLeft: "-30px" }}
-                component="img"
-                src={mission}
-              />
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  mt: "100px",
+                  gap: "10px",
+                }}
+              >
+                <Box
+                  sx={{
+                    maxWidth: "264px",
+                    maxHeight: "41px",
+                    marginLeft: "-30px",
+                  }}
+                  component="img"
+                  src={mission}
+                />
+                <Typography
+                  sx={{
+                    maxWidth: "356px",
+                    maxheight: "98px",
+                    fontFamily: "TanseekModernProArabic-Light",
+                    fontSize: "27px",
+                    color: "#FFFFFF",
+                    fontWeight: "400",
+                    lineHeight: "33.31px",
+                  }}
+                >
+                  Our mission at Trading Society is to provide high-quality,
+                  easy-to-understand Forex education that empowers traders of
+                  all levels. We aim to build a strong, collaborative community
+                  where traders can share insights, learn from each other, and
+                  grow in a supportive environment.
+                </Typography>
+              </Box>
             </Box>
-            <Typography
-              sx={{
-                maxWidth: "356px",
-                maxheight: "98px",
-                fontFamily: "TanseekModernProArabic-Light",
-                fontSize: "27px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                lineHeight: "33.31px",
-                marginLeft: "300px",
-              }}
-            >
-              Our mission at Trading Society is to provide high-quality,
-              easy-to-understand Forex education that empowers traders of all
-              levels. We aim to build a strong, collaborative community where
-              traders can share insights, learn from each other, and grow in a
-              supportive environment.
-            </Typography>
           </Box>
           <Box
             sx={{
               display: "flex",
-              flexDirection: "column",
-              marginRight: "300px",
-              // backgroundColor:'red'
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center",flexWrap:'wrap' }}>
+            <Box sx={{ display: "flex", alignItems: "center"}}>
               <Box
-                sx={{ maxWidth: "346px", maxHeight: "217px", backgroundImg: "cover" }}
+                sx={{
+                  maxWidth: "346px",
+                  maxHeight: "217px",
+                  backgroundImg: "cover",
+                }}
                 component="img"
                 src={visionImg}
               />
-              <Box
-                sx={{ maxWidth: "234px", maxHeight: "36px", marginLeft: "-30px" }}
-                component="img"
-                src={vision}
-              />
+              <Box sx={{ display: "flex", flexDirection: "column",gap:'10px',mt:'100px' }}>
+                <Box
+                  sx={{
+                    maxWidth: "234px",
+                    maxHeight: "36px",
+                    marginLeft: "-30px",
+                  }}
+                  component="img"
+                  src={vision}
+                />
+                <Typography
+                  sx={{
+                    maxWidth: "356px",
+                    maxHeight: "98px",
+                    fontFamily: "TanseekModernProArabic-Light",
+                    fontSize: "27px",
+                    color: "#FFFFFF",
+                    fontWeight: "400",
+                    lineHeight: "33.31px",
+                  }}
+                >
+                  Our vision is to create a global network of skilled traders
+                  who not only succeed individually but also contribute to the
+                  growth of a thriving, informed trading community. We envision
+                  a future where Forex trading is accessible, transparent, and
+                  rewarding for all.
+                </Typography>
+              </Box>
             </Box>
-            <Typography
-              sx={{
-                maxWidth: "356px",
-                maxHeight: "98px",
-                fontFamily: "TanseekModernProArabic-Light",
-                fontSize: "27px",
-                color: "#FFFFFF",
-                fontWeight: "400",
-                lineHeight: "33.31px",
-                marginLeft: "300px",
-              }}
-            >
-              Our vision is to create a global network of skilled traders who
-              not only succeed individually but also contribute to the growth of
-              a thriving, informed trading community. We envision a future where
-              Forex trading is accessible, transparent, and rewarding for all.
-            </Typography>
           </Box>
           <Box
             sx={{
@@ -163,12 +195,7 @@ function Home() {
         </Box>
       </Box>
 
-
-
-    <Box sx={{my:'200px'}}>
-
-
-    </Box>
+      <Box sx={{ my: "200px" }}></Box>
     </>
   );
 }
