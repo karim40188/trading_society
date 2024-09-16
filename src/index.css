@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background-color: #191919 !important;
+  height:auto;
+  width: "100%";
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none !important ;
+}
+
+/* .line_after::after {
+    width: "251px";
+    height:'3px';
+    background-color:red;
+
+} */
