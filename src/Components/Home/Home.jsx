@@ -10,9 +10,9 @@ import rightSideImg from "../../assets/right_side.png";
 function Home() {
   return (
     <>
-      <Box sx={{ width: "1333px", margin: "auto" }}>
+      <Box sx={{ maxWidth: "1333px", margin: "auto" }}>
         <Navbar />
-        <Box sx={{ width: "1316px", height: "719px", margin: "auto" }}>
+        <Box sx={{ maxWidth: "1316px", maxHeight: "719px", margin: "auto" }}>
           <Box sx={{ width: "100%" }} component="img" src={banner} />
         </Box>
 
@@ -30,13 +30,13 @@ function Home() {
               ABOUT US – TRADING SOCIETY
             </Typography>
             <Box
-              sx={{ border: "5px solid #ECBC56", width: "251px", height: "0" }}
+              sx={{ border: "5px solid #ECBC56", maxWidth: "251px", height: "0" }}
             ></Box>
           </Box>
           <Typography
             sx={{
-              width: "957px",
-              height: "194px",
+              maxWidth: "957px",
+              maxHeight: "194px",
               color: "#fff",
               fontSize: "27px",
               fontWeight: "400",
@@ -57,7 +57,7 @@ function Home() {
       </Box>
 
       <Box sx={{ marginBlock: "200px" }}>
-        <Box sx={{ display: "flex", position: "relative" }}>
+        <Box sx={{ display: "flex", position: "relative",flexWrap:'wrap' }}>
           <Box
             sx={{
               display: "flex",
@@ -65,22 +65,22 @@ function Home() {
               alignItems:'center'
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: "flex", alignItems: "center",flexWrap:'wrap' }}>
               <Box
-                sx={{ width: "250px", height: "250px", backgroundImg: "cover" }}
+                sx={{ maxWidth: "250px", maxHeight: "250px", backgroundImg: "cover" }}
                 component="img"
                 src={missionImg}
               />
               <Box
-                sx={{ width: "264px", height: "41px", marginLeft: "-30px" }}
+                sx={{ maxWidth: "264px", maxHeight: "41px", marginLeft: "-30px" }}
                 component="img"
                 src={mission}
               />
             </Box>
             <Typography
               sx={{
-                width: "356px",
-                height: "98px",
+                maxWidth: "356px",
+                maxheight: "98px",
                 fontFamily: "TanseekModernProArabic-Light",
                 fontSize: "27px",
                 color: "#FFFFFF",
@@ -104,22 +104,22 @@ function Home() {
               // backgroundColor:'red'
             }}
           >
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: "flex", alignItems: "center",flexWrap:'wrap' }}>
               <Box
-                sx={{ width: "346px", height: "217px", backgroundImg: "cover" }}
+                sx={{ maxWidth: "346px", maxHeight: "217px", backgroundImg: "cover" }}
                 component="img"
                 src={visionImg}
               />
               <Box
-                sx={{ width: "234px", height: "36px", marginLeft: "-30px" }}
+                sx={{ maxWidth: "234px", maxHeight: "36px", marginLeft: "-30px" }}
                 component="img"
                 src={vision}
               />
             </Box>
             <Typography
               sx={{
-                width: "356px",
-                height: "98px",
+                maxWidth: "356px",
+                maxHeight: "98px",
                 fontFamily: "TanseekModernProArabic-Light",
                 fontSize: "27px",
                 color: "#FFFFFF",
@@ -136,8 +136,8 @@ function Home() {
           </Box>
           <Box
             sx={{
-              width: "350px",
-              height: "441px",
+              maxWidth: "350px",
+              maxHeight: "441px",
               opacity: "0.5",
               position: "absolute",
               left: "0",
@@ -152,8 +152,8 @@ function Home() {
           </Box>
           <Box
             sx={{
-              width: "350px",
-              height: "441px",
+              maxWidth: "350px",
+              maxHeight: "441px",
               opacity: "0.5",
               position: "absolute",
               top: "-300px",

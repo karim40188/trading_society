@@ -21,21 +21,22 @@ function Navbar() {
         display: "flex",
         backgroundColor: "#303030",
         alignItems: "center",
-        p: "12px",
-        width:'1333px',
+        px: "6px",
+        py:"12px",
+        maxWidth:'1333px',
         margin:'10px auto',
-        justifyContent:'space-between',
+        justifyContent:'space-around',
         borderRadius:'15px',
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center" }}>
         <Box
-          sx={{ width: "79px", height: "69px" }}
+          sx={{ maxWidth: "79px", maxHeight: "69px" }}
           component="img"
           src={logo}
         />
         <Box
-          sx={{ width: "175px", height: "38px" }}
+          sx={{ maxWidth: "175px", maxHeight: "38px" }}
           component="img"
           src={branding}
         />
@@ -43,7 +44,7 @@ function Navbar() {
 
       <Box
         component="ul"
-        sx={{ display: "flex", gap: "10px", alignItems: "center" }}
+        sx={{ display: "flex", gap: "10px", alignItems: "center",flexWrap:'wrap' }}
       >
         {links.map((link) => {
           return (
