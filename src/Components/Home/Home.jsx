@@ -62,7 +62,7 @@ function Home() {
             sx={{
               display: "flex",
               flexDirection: "column",
-              marginLeft: "100px",
+              alignItems:'center'
             }}
           >
             <Box sx={{ display: "flex", alignItems: "center" }}>
