@@ -4,7 +4,7 @@ import banner from "../../assets/banner.png";
 import missionImg from "../../assets/misson_img.png";
 import mission from "../../assets/mission.png";
 import visionImg from "../../assets/vision_img.png";
-import vision from "../../assets/vision.png";
+import vision from "../../assets/Vision.png";
 import leftSideImg from "../../assets/left_side.png";
 import rightSideImg from "../../assets/right_side.png";
 function Home() {
@@ -168,7 +168,7 @@ function Home() {
 
 
     <Box sx={{my:'200px'}}>
-      
+
 
     </Box>
     </>
